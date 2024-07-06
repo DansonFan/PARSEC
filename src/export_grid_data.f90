@@ -220,6 +220,9 @@ subroutine write_cube(pbc,grid,grid3d_data,origin_xyz,outfile_name)
   !C      REST: 6E13.5      CUBE DATA
   !C
   !C     ALL COORDINATES ARE GIVEN IN ATOMIC UNITS
+  
+  ! Dingxin: When using Ubuntu (other running environments have not been tested), the grid data will be printed to the command line in the terminal instead of to the .cube file. 
+  outfile_unit = 94
 
   ! Dummy number
   num_atoms = 1
